@@ -1,0 +1,30 @@
+.link {
+  text-decoration: none;
+  color: black;
+  margin: 10px;
+}
+
+.active {
+  text-decoration: none;
+  color: hotpink;
+  margin: 10px;
+}
+
+.block {
+  width: 21px;
+  height: 21px;
+  margin: 10px;
+  background: darkcyan;
+}
+
+.header {
+  display: flex;
+  width: 300px;
+  transition-duration: 300ms;
+  transform: translate(-235px);
+}
+
+.header:hover {
+  transition-duration: 300ms;
+  transform: translate(0);
+}
