@@ -1,23 +1,37 @@
 .dark {
-    background: dimgrey;
+  background: dimgrey;
 }
 
 .dark-text {
-    color: aliceblue;
+  color: aliceblue;
 }
 
 .red {
-    background: lightcoral;
+  background: lightcoral;
 }
 
 .red-text {
-    color: aqua;
+  color: aqua;
 }
 
 .some {
-    background: lightgreen;
+  background: lightgreen;
 }
 
 .some-text {
-    color: darkslateblue;
+  color: darkslateblue;
+}
+
+.pink {
+  background-color: hotpink;
+}
+.pink-text {
+  color: rgb(41, 32, 37);
+}
+
+.forest {
+  background-color: rgb(183, 216, 198);
+}
+.forest-text {
+  color: rgb(80, 65, 17);
 }
