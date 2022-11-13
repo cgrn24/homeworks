@@ -8,11 +8,16 @@ export const Request = () => {
   const [status, setStatus] = useState<string>('')
   const onClickHandler = () => {
     setStatus('')
-    requestAPI.postRequest(value).catch((error: any) => {
-      console.log({ ...error })
-      console.log(error.response ? error.response.data.errorText : error.message)
-      setStatus(error.response ? error.response.data.errorText : error.message)
-    })
+    requestAPI
+      .postRequest(value)
+      .then((e: any) => {
+        setStatus(e.data.errorText)
+      })
+      .catch((error: any) => {
+        console.log({ ...error })
+        console.log(error.response ? error.response.data.errorText : error.message)
+        setStatus(error.response ? error.response.data.errorText : error.message)
+      })
   }
   return (
     <div>
